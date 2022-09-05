@@ -647,7 +647,9 @@
 				"454aaec8-86c6-4ec3-846d-5070373334ca",
 				"112e81c3-aa69-46aa-a3d9-814f882e8f79",
 				"34dccd2f-e628-480b-8bfc-a8882ebefac3",
-				"eb8deca1-eef6-47c4-93f0-1388bedd1e06"
+				"eb8deca1-eef6-47c4-93f0-1388bedd1e06",
+				"8c58f4fa-aed1-44a0-bd43-e115a6edebbb",
+				"ba932fe6-bd6e-41bb-b4ee-12a371901b81"
 			],
 			"lines": [],
 			"keys": [
@@ -1278,6 +1280,265 @@
 			"validationAction": "na",
 			"collation": "",
 			"others": ""
+		},
+		"e096f63d-5910-4b73-81d6-701ae16d7c5d": {
+			"id": "e096f63d-5910-4b73-81d6-701ae16d7c5d",
+			"visible": true,
+			"name": "Salary",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "3257bb12-d973-4448-a5dd-e9422ec06b03",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "12abdf1f-0629-433c-b5f5-94c28aa8aa2c",
+					"name": "user",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Users"
+				},
+				{
+					"id": "304e3092-e1ea-4961-86ec-ab58cb771fc5",
+					"name": "grossSalary",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "6735ab9e-913c-400e-a508-3acc379a4d23",
+					"name": "netSalary",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "7813280e-7569-4b9f-9e38-c0cac8d2309d",
+					"name": "Salary",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Salary"
+				},
+				{
+					"id": "ef585443-ae58-422f-a3cc-fcda805a699d",
+					"name": "taxPercent",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [
+				"8c58f4fa-aed1-44a0-bd43-e115a6edebbb",
+				"8ee7a5b0-b4a6-45c0-8709-05c65837659b",
+				"c1ea3298-370f-4b2b-b15c-0d08a94e9c6a"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "74d1d441-980e-4463-ad2b-889af6095b71",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "6d383bdf-a20d-4a80-be96-1ecc06d59d42",
+							"colid": "3257bb12-d973-4448-a5dd-e9422ec06b03"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
+		},
+		"4a673b06-d652-4d46-88bf-414ac4c257c9": {
+			"id": "4a673b06-d652-4d46-88bf-414ac4c257c9",
+			"visible": true,
+			"name": "SalaryStatistics",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "762a761d-6676-43f6-b005-9592d81360df",
+					"name": "_id",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": ""
+				},
+				{
+					"id": "d6921862-931f-4315-9c99-7cf2e04f19a0",
+					"name": "user",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Users"
+				},
+				{
+					"id": "df4374f8-8dd7-4cc6-9ac3-badf673d9d3e",
+					"name": "paidMonth",
+					"datatype": "enum",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "405e2e91-ed84-4d18-8291-e0bbdc1f2d66",
+					"name": "isPaid",
+					"datatype": "bool",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "b2679ec7-ad5c-44c6-87d5-877d377a7d2a",
+					"name": "salary",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"fk": true,
+					"ref": "Salary"
+				},
+				{
+					"id": "311b7620-4bdb-4ce0-80b6-2058ac864e3d",
+					"name": "paidAmount",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "2c773d33-060a-47da-86df-63f10000f18a",
+					"name": "fine",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "61c93bdc-8176-4a83-8640-f755cf8f9b6a",
+					"name": "loanAmount",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [
+				"ba932fe6-bd6e-41bb-b4ee-12a371901b81",
+				"c1ea3298-370f-4b2b-b15c-0d08a94e9c6a"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "9572f021-c6d2-4ced-a98b-68db2c7d459b",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "1b09ae1d-cac5-4234-9811-13f12162a659",
+							"colid": "762a761d-6676-43f6-b005-9592d81360df"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"validationLevel": "na",
+			"validationAction": "na",
+			"collation": "",
+			"others": ""
 		}
 	},
 	"relations": {
@@ -1630,6 +1891,106 @@
 			],
 			"generate": true,
 			"generateCustomCode": true
+		},
+		"8c58f4fa-aed1-44a0-bd43-e115a6edebbb": {
+			"id": "8c58f4fa-aed1-44a0-bd43-e115a6edebbb",
+			"visible": true,
+			"name": "Users_Salary",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "847c356e-46cc-452c-86dd-a622392c1645",
+			"parent": "a49acdb3-1402-4f56-9f97-38ce8dc4d936",
+			"child": "e096f63d-5910-4b73-81d6-701ae16d7c5d",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "3d426ecf-cd29-482c-9b48-daaf5841c011",
+					"parentcol": "72d75c5a-a8eb-44d7-bf77-dd2770c167da",
+					"childcol": "12abdf1f-0629-433c-b5f5-94c28aa8aa2c"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"ba932fe6-bd6e-41bb-b4ee-12a371901b81": {
+			"id": "ba932fe6-bd6e-41bb-b4ee-12a371901b81",
+			"visible": true,
+			"name": "Users_SalaryStatistics",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "847c356e-46cc-452c-86dd-a622392c1645",
+			"parent": "a49acdb3-1402-4f56-9f97-38ce8dc4d936",
+			"child": "4a673b06-d652-4d46-88bf-414ac4c257c9",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "a3d407b8-a7b8-486d-8e2f-9e5216ffcab5",
+					"parentcol": "72d75c5a-a8eb-44d7-bf77-dd2770c167da",
+					"childcol": "d6921862-931f-4315-9c99-7cf2e04f19a0"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8ee7a5b0-b4a6-45c0-8709-05c65837659b": {
+			"id": "8ee7a5b0-b4a6-45c0-8709-05c65837659b",
+			"visible": true,
+			"name": "Salary_Salary",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "74d1d441-980e-4463-ad2b-889af6095b71",
+			"parent": "e096f63d-5910-4b73-81d6-701ae16d7c5d",
+			"child": "e096f63d-5910-4b73-81d6-701ae16d7c5d",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "986fd971-5851-4f14-908c-fc84d5026025",
+					"parentcol": "3257bb12-d973-4448-a5dd-e9422ec06b03",
+					"childcol": "7813280e-7569-4b9f-9e38-c0cac8d2309d"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"c1ea3298-370f-4b2b-b15c-0d08a94e9c6a": {
+			"id": "c1ea3298-370f-4b2b-b15c-0d08a94e9c6a",
+			"visible": true,
+			"name": "Salary_SalaryStatistics",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "74d1d441-980e-4463-ad2b-889af6095b71",
+			"parent": "e096f63d-5910-4b73-81d6-701ae16d7c5d",
+			"child": "4a673b06-d652-4d46-88bf-414ac4c257c9",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "857f9a7b-9ef5-4447-ad93-27c19c1721ca",
+					"parentcol": "3257bb12-d973-4448-a5dd-e9422ec06b03",
+					"childcol": "b2679ec7-ad5c-44c6-87d5-877d377a7d2a"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true
 		}
 	},
 	"notes": {},
@@ -1662,7 +2023,8 @@
 		"def_validationLevel": "na",
 		"def_validationAction": "na",
 		"def_collation": "",
-		"def_others": ""
+		"def_others": "",
+		"lastSaved": "Mon Sep 05 2022 21:29:24 GMT+0600 (Bangladesh Standard Time)"
 	},
 	"otherObjects": {},
 	"diagrams": {
@@ -1794,6 +2156,28 @@
 					"y": 522,
 					"gHeight": 189,
 					"gWidth": 209,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"e096f63d-5910-4b73-81d6-701ae16d7c5d": {
+					"referencedItemId": "e096f63d-5910-4b73-81d6-701ae16d7c5d",
+					"x": 435,
+					"y": 64,
+					"gHeight": 134,
+					"gWidth": 182,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true
+				},
+				"4a673b06-d652-4d46-88bf-414ac4c257c9": {
+					"referencedItemId": "4a673b06-d652-4d46-88bf-414ac4c257c9",
+					"x": 778,
+					"y": 91,
+					"gHeight": 170,
+					"gWidth": 196,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
