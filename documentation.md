@@ -53,7 +53,7 @@ The system may consists of below features:
   - Tailwind CSS
   - PWA
 
-# Database Schemas
+# Database Design
 
 - Departments
   - _id (string)
@@ -131,6 +131,23 @@ The system may consists of below features:
   - createdAt (date)
   - updatedAt (date)
 
+- Salary
+  - _id (string)
+  - user (string of User _id)
+  - grossSalary (number)
+  - netSalary (number)
+  - taxPercent (number)
+
+- SalaryStatistics
+  - _id (string)
+  - user (string of User _id)
+  - paidMonth (string)
+  - isPaid (string)
+  - salary (string of Salary _id)
+  - paidAmount (number)
+  - fine (number)
+  - loanAmount (number)
+
 - UserDocuments
   - _id (string)
   - user (string of User _id)
@@ -163,3 +180,5 @@ The system may consists of below features:
   - uiLink (string)
   - createdAt (date)
   - updatedAt (date)
+
+<img src="./databaseDesign.png" height="100%" width="100%" />
